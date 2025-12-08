@@ -1,6 +1,37 @@
 ---
 name: code-consistency-reviewer
-description: Use this agent when you need to review pending code changes for consistency with the existing codebase before committing. This includes checking naming conventions, code style, architectural patterns, and ensuring new or modified code aligns with established project standards.\n\nExamples:\n\n<example>\nContext: The user has just finished implementing a new feature and wants to ensure their changes are consistent before committing.\nuser: "I just finished adding the new authentication module"\nassistant: "Let me review your pending changes for consistency with the codebase."\n<commentary>\nSince the user has completed implementing code, use the code-consistency-reviewer agent to analyze the pending changes and ensure they follow established conventions.\n</commentary>\nassistant: "I'll use the code-consistency-reviewer agent to examine your pending changes for naming conventions, code style, and architectural consistency."\n</example>\n\n<example>\nContext: The user wants a quality check before creating a pull request.\nuser: "Can you check my changes before I commit?"\nassistant: "I'll launch the code-consistency-reviewer agent to analyze your pending changes."\n<commentary>\nThe user is explicitly asking for a review of their changes, which is the primary use case for the code-consistency-reviewer agent.\n</commentary>\n</example>\n\n<example>\nContext: After completing a logical chunk of work, proactively suggest a consistency review.\nuser: "Done implementing the gRPC endpoint for the new service"\nassistant: "Great work! Let me use the code-consistency-reviewer agent to ensure your implementation follows the project's established patterns and naming conventions."\n<commentary>\nSince the user has completed a significant piece of work, proactively use the code-consistency-reviewer agent to catch any inconsistencies before they commit.\n</commentary>\n</example>
+description: |
+  Use this agent when you need to review pending code changes for consistency with the existing codebase before committing. This includes checking naming conventions, code style, architectural patterns, and ensuring new or modified code aligns with established project standards.
+
+  Examples:
+
+  <example>
+  Context: The user has just finished implementing a new feature and wants to ensure their changes are consistent before committing.
+  user: "I just finished adding the new authentication module"
+  assistant: "Let me review your pending changes for consistency with the codebase."
+  <commentary>
+  Since the user has completed implementing code, use the code-consistency-reviewer agent to analyze the pending changes and ensure they follow established conventions.
+  </commentary>
+  assistant: "I'll use the code-consistency-reviewer agent to examine your pending changes for naming conventions, code style, and architectural consistency."
+  </example>
+
+  <example>
+  Context: The user wants a quality check before creating a pull request.
+  user: "Can you check my changes before I commit?"
+  assistant: "I'll launch the code-consistency-reviewer agent to analyze your pending changes."
+  <commentary>
+  The user is explicitly asking for a review of their changes, which is the primary use case for the code-consistency-reviewer agent.
+  </commentary>
+  </example>
+
+  <example>
+  Context: After completing a logical chunk of work, proactively suggest a consistency review.
+  user: "Done implementing the gRPC endpoint for the new service"
+  assistant: "Great work! Let me use the code-consistency-reviewer agent to ensure your implementation follows the project's established patterns and naming conventions."
+  <commentary>
+  Since the user has completed a significant piece of work, proactively use the code-consistency-reviewer agent to catch any inconsistencies before they commit.
+  </commentary>
+  </example>
 tools: Bash, Glob, Grep, Read, WebFetch, TodoWrite, WebSearch, BashOutput, Skill, SlashCommand, mcp__github__add_comment_to_pending_review, mcp__github__add_issue_comment, mcp__github__assign_copilot_to_issue, mcp__github__create_branch, mcp__github__create_or_update_file, mcp__github__create_pull_request, mcp__github__create_repository, mcp__github__delete_file, mcp__github__fork_repository, mcp__github__get_commit, mcp__github__get_file_contents, mcp__github__get_label, mcp__github__get_latest_release, mcp__github__get_me, mcp__github__get_release_by_tag, mcp__github__get_tag, mcp__github__get_team_members, mcp__github__get_teams, mcp__github__issue_read, mcp__github__issue_write, mcp__github__list_branches, mcp__github__list_commits, mcp__github__list_issue_types, mcp__github__list_issues, mcp__github__list_pull_requests, mcp__github__list_releases, mcp__github__list_tags, mcp__github__merge_pull_request, mcp__github__pull_request_read, mcp__github__pull_request_review_write, mcp__github__push_files, mcp__github__request_copilot_review, mcp__github__search_code, mcp__github__search_issues, mcp__github__search_pull_requests, mcp__github__search_repositories, mcp__github__search_users, mcp__github__sub_issue_write, mcp__github__update_pull_request, mcp__github__update_pull_request_branch, ListMcpResourcesTool, ReadMcpResourceTool, mcp__ide__getDiagnostics, mcp__ide__executeCode
 model: opus
 color: purple
