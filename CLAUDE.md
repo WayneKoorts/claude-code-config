@@ -31,3 +31,4 @@ System prompt content here...
 - Agent files use kebab-case naming: `my-custom-agent.md`
 - Descriptions should include usage examples in the format shown in existing agents
 - Keep agent prompts focused and specific to their review/task domain
+- When creating or editing agent files, use YAML literal block scalar syntax (`|`) for multiline `description` fields instead of escaped `\n` characters
