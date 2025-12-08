@@ -8,6 +8,14 @@ My custom agents, commands, configuration etc. for Claude Code.
 
 Agent definitions are Markdown files with YAML frontmatter that define custom subagents for Claude Code. They can be installed at two levels:
 
+#### Prerequisites
+
+Before using agents from this repository:
+
+- **GitHub MCP Server**: Some agents include GitHub MCP tools (prefixed with `mcp__github__`) and assume the [GitHub MCP server](https://github.com/github/github-mcp-server) is configured in Claude Code.
+- **GitHub CLI**: Some agents may invoke the `gh` command-line utility for GitHub operations. Install it from [cli.github.com](https://cli.github.com/).
+- **Review before use**: Agent files should be reviewed before installing to ensure they are suitable for your specific workflow and environment. Check the `tools` list and system prompt to understand what each agent can do.
+
 #### Global Configuration (all projects)
 
 Copy agent files to your global Claude configuration directory:
