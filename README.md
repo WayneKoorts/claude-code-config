@@ -6,7 +6,7 @@ My custom agents, commands, configuration etc. for Claude Code.
 
 ### Agent Definitions
 
-Agent definitions are Markdown files with YAML frontmatter that define custom subagents for Claude Code. They can be installed at two levels:
+Agent definitions are Markdown files with YAML frontmatter that define custom subagents for Claude Code.
 
 #### Prerequisites
 
@@ -16,7 +16,11 @@ Before using agents from this repository:
 - **GitHub CLI**: Some agents may invoke the `gh` command-line utility for GitHub operations. Install it from [cli.github.com](https://cli.github.com/).
 - **Review before use**: Agent files should be reviewed before installing to ensure they are suitable for your specific workflow and environment. Check the `tools` list and system prompt to understand what each agent can do.
 
-#### Global Configuration (all projects)
+#### Installation
+
+Agents can be installed at two levels:
+
+##### Global (all projects)
 
 Copy agent files to your global Claude configuration directory:
 
@@ -30,7 +34,7 @@ cp agents/code-consistency-reviewer.md ~/.claude/agents/
 
 Agents installed globally are available in all projects.
 
-#### Project-Level Configuration
+##### Project-Level
 
 Copy agent files to your project's `.claude/agents/` directory:
 
