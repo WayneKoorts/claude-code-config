@@ -1,6 +1,6 @@
-# Claude Code Config - agents, commands, etc.
+# Claude Code Config - agents, skills, commands, etc.
 
-My custom agents, commands, configuration etc. for Claude Code.
+My custom agents, skills, commands, configuration etc. for Claude Code.
 
 ## Usage
 
