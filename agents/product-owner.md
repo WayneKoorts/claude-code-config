@@ -10,7 +10,7 @@ description: |
   user: "Create a ticket for adding dark mode to the settings page"
   assistant: "I'll use the product-owner agent to handle this ticket creation request, as it will check for existing tickets and ensure proper documentation."
   <commentary>
-  Since the user is requesting ticket creation, use the Task tool to launch the product-owner agent to check for duplicates, gather requirements, and create a well-structured ticket.
+  Since the user is requesting ticket creation, use the Agent tool to launch the product-owner agent to check for duplicates, gather requirements, and create a well-structured ticket.
   </commentary>
   </example>
 
@@ -40,7 +40,7 @@ description: |
   The user mentioned future work that should be tracked. Proactively use the product-owner agent to ensure this doesn't get lost and is properly documented in the backlog.
   </commentary>
   </example>
-model: opus
+model: sonnet
 color: pink
 ---
 
