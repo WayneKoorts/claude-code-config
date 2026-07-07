@@ -1,6 +1,6 @@
 # Skills
 
-This directory contains reusable Claude Code skills that can be copied to either a project-level or user-level skills directory. For more information on skills, see the [Claude Skills documentation](https://docs.anthropic.com/en/docs/claude-code/skills).
+This directory contains reusable Claude Code skills that can be copied to either a project-level or user-level skills directory. For more information on skills, see the [Claude Skills documentation](https://code.claude.com/docs/en/skills).
 
 ## Installation
 

@@ -1,6 +1,6 @@
 # Agents
 
-This directory contains custom agent definitions for Claude Code. For more information on agents, see the [Claude Code agents documentation](https://docs.anthropic.com/en/docs/claude-code/agents).
+This directory contains custom agent definitions for Claude Code. For more information on agents, see the [Claude Code subagents documentation](https://code.claude.com/docs/en/sub-agents).
 
 Agent definitions are Markdown files with YAML frontmatter that define custom subagents for Claude Code.
 
